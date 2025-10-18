@@ -2,7 +2,7 @@ export const categories = [
     {
         id: 1,
         title: "Dessert",
-        description: "This is a desert",
+        description: "This is a dessert",
         subcategories: []
     },
 
@@ -19,6 +19,14 @@ export const categories = [
             {
                 id: 2,
                 title: "Potatoes",
+            },
+            {
+                id: 3,
+                title: "idk",
+            },
+            {
+                id: 4,
+                title: "idk 2",
             }
         ]
     },

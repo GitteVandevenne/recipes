@@ -33,7 +33,7 @@ function Navigation() {
     }
 
     return (
-        <div className="w-full flex justify-center mb-10 text-sm text-gray-800">
+        <div className="w-full flex justify-center mb-10 text-sm text-primary">
             <Link to={`/`}>
                 Home
             </Link>

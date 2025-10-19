@@ -4,7 +4,7 @@ export const recipes = [
         title: "Waffles",
         category: 4,
         subcategory: 1,
-        image: "/assets/Waffles.jpg",
+        image: "/recipes/assets/Waffles.jpg",
         ingredients: [
             "250g Flour",
             "3g Yeast",
@@ -47,7 +47,7 @@ export const recipes = [
         title: "Spinach Pasta",
         category: 2,
         subcategory: 1,
-        image: "/assets/Spinach_pasta.jpg",
+        image: "/recipes/assets/Spinach_pasta.jpg",
         ingredients: [
             "Spinach",
             "Cream",
@@ -89,7 +89,7 @@ export const recipes = [
         title: "Chocolate chip cookies",
         category: 4,
         subcategory: 1,
-        image: "/assets/chocolate_chip_cookies.jpg",
+        image: "/recipes/assets/chocolate_chip_cookies.jpg",
         ingredients: [
             "200g Chocolate chips",
             "50g White sugar",
@@ -111,7 +111,7 @@ export const recipes = [
         title: "Garlic rolls",
         category: 4,
         subcategory: 2,
-        image: "/assets/garlic_rolls.jpg",
+        image: "/recipes/assets/garlic_rolls.jpg",
         ingredients: {
             Dough: [
                 "1 Egg",

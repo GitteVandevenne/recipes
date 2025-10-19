@@ -6,7 +6,7 @@ function Home() {
         <div className={`overflow-hidden bg-five min-h-screen`}>
             <div className="relative w-full h-100 overflow-hidden text-center">
                 <img
-                    src={"/assets/Header.jpg"}
+                    src={"/recipes/assets/Header.jpg"}
                     alt={'header'}
                     className="w-full object-cover -translate-y-40"
                 />

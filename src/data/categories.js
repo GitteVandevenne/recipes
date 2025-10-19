@@ -1,8 +1,10 @@
+
 export const categories = [
     {
         id: 1,
         title: "Dessert",
         description: "This is a dessert",
+        image: "/assets/ice_cream.png",
         subcategories: []
     },
 

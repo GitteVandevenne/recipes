@@ -3,7 +3,7 @@ export const recipes = [
         id: 1,
         title: "Waffles",
         category: 1,
-        image: "",
+        image: "/assets/Waffles.jpg",
         ingredients: [
             "250g Flour",
             "3g Yeast",
@@ -28,8 +28,17 @@ export const recipes = [
         id: 2,
         title: "Pancakes",
         category: 1,
-        ingredients: [],
-        instructions: [],
+        ingredients: [
+            "250g Flour",
+            "500ml Milk",
+            "2 Eggs",
+            "Pinch of salt.",
+        ],
+        instructions: [
+            "Mix all the ingredients in a bowl",
+            "Put some butter in a pan",
+            "Bake the pancakes. (Take a little less than one soup ladle of batter per pancake.)"
+        ],
     },
 
     {
@@ -37,7 +46,21 @@ export const recipes = [
         title: "Spinach Pasta",
         category: 2,
         subcategory: 1,
-        ingredients: [],
-        instructions: [],
+        image: "/assets/Spinach_pasta.jpg",
+        ingredients: [
+            "Spinach",
+            "Cream",
+            "Pasta",
+            "Bacon",
+            "Salt & pepper",
+            "Grated cheese"
+        ],
+        instructions: [
+            "Cook the pasta",
+            "Prepare the spinach and bacon:\nWhile the pasta cooks, place the frozen spinach in a pot with a bit of water. Cook over medium heat until fully defrosted.\nAt the same time, bake the bacon until crispy.",
+            "Make the sauce:\nOnce the spinach is defrosted and the water has mostly evaporated, season with salt and pepper to taste.\nAdd the cream and stir to combine. Let it simmer for a couple of minutes to thicken slightly.",
+            "Combine everything:\nDrain the cooked pasta and add it to the spinach cream sauce.\nAdd the bacon and stir well to combine.\nTaste and adjust seasoning if needed",
+            "Serve:\nTop with grated cheese (of course) and Enjoy!"
+        ],
     },
 ]

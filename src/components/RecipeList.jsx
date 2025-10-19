@@ -7,7 +7,7 @@ function RecipeList({category, subcategory}) {
     if (!subcategory) {
         categoryRecipes = recipes.filter(r => r.category === Number(category.id));
     } else {
-        categoryRecipes = recipes.filter(r => r.subcategory === Number(subcategory.id));
+        categoryRecipes = recipes.filter(r => r.category === Number(category.id) && r.subcategory === Number(subcategory.id));
     }
     return (
         <div className={`

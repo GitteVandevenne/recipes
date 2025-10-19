@@ -8,6 +8,35 @@ function RecipePage() {
     const recipe = recipes.find(r => r.id === parseInt(recipeId));
     if (!recipe) return <p>Recipe not found!</p>;
 
+    const renderIngredients = (ingredients) => {
+        // Case 1: Simple array of strings
+        if (Array.isArray(ingredients)) {
+            return (
+                <ul className="list-disc ml-6">
+                    {ingredients.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                    ))}
+                </ul>
+            );
+        }
+
+        // Case 2: Object with subtitles (e.g., Dough, Filling)
+        if (typeof ingredients === "object" && ingredients !== null) {
+            return Object.entries(ingredients).map(([section, items], idx) => (
+                <div key={idx} className="mb-4">
+                    <h3 className="font-semibold text-base mb-2">{section}</h3>
+                    <ul className="list-disc ml-6">
+                        {items.map((item, i) => (
+                            <li key={i}>{item}</li>
+                        ))}
+                    </ul>
+                </div>
+            ));
+        }
+
+        return <p>No ingredients found</p>;
+    };
+
     return (
         <div className="bg-five absolute top-0 w-full min-h-screen">
             <div className={`mt-10`}>
@@ -32,19 +61,11 @@ function RecipePage() {
                             />
                         </div>
                     )}
-                    <div className={`p-6 bg-primary/80 rounded-3xl shadow mx-auto z-0`}>
+                    <div className={`p-6 bg-primary/80 rounded-3xl shadow mb-10 mx-auto z-0`}>
                         <div className={`flex justify-between items-start mb-10 gap-4 p-6`}>
                                 <div className="basis-3/10">
                                     <h2 className="text-xl font-semibold mt-4 mb-2">Ingredients</h2>
-                                    {recipe.ingredients.length > 0 ? (
-                                        <ul className="list-disc ml-6">
-                                            {recipe.ingredients.map((i, idx) => (
-                                                <li key={idx}>{i}</li>
-                                            ))}
-                                        </ul>
-                                    ) : (
-                                        <p>No ingredients found</p>
-                                    )}
+                                    {renderIngredients(recipe.ingredients)}
                                 </div>
                             <div className={'basis-7/10'}>
                                 <h2 className="text-xl font-semibold mt-4 mb-2">Instructions</h2>

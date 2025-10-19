@@ -3,8 +3,7 @@ export const categories = [
     {
         id: 1,
         title: "Dessert",
-        description: "This is a dessert",
-        image: "/assets/ice_cream.png",
+        description: "",
         subcategories: []
     },
 
@@ -24,17 +23,31 @@ export const categories = [
             },
             {
                 id: 3,
-                title: "idk",
+                title: "Bread",
             },
             {
                 id: 4,
-                title: "idk 2",
+                title: "Rice",
             }
         ]
     },
     {
         id: 3,
+        title: "Lunch",
+        description: "Bread is the only right option",
+    },
+    {
+        id: 4,
         title: "Snacks",
-        subcategories: []
+        subcategories: [
+            {
+                id: 1,
+                title: "Sweet",
+            },
+            {
+                id: 2,
+                title: "Savory",
+            },
+        ]
     },
 ]

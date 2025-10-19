@@ -8,7 +8,7 @@ function Home() {
                 <img
                     src={"/assets/Header.jpg"}
                     alt={'header'}
-                    className="w-full object-cover"
+                    className="w-full object-cover -translate-y-40"
                 />
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="absolute inset-0 flex items-center justify-center">

@@ -7,15 +7,13 @@ import RecipePage from "./pages/RecipePage.jsx";
 
 function App() {
     return (
-        <div className={`z-100`}>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/category/:categoryId" element={<CategoryPage/>}/>
-                    <Route path="/recipe/:recipeId" element={<RecipePage/>}/>
-                </Routes>
-            </BrowserRouter>
-        </div>
+        <BrowserRouter basename="/recipes">
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/category/:categoryId" element={<CategoryPage/>}/>
+                <Route path="/recipe/:recipeId" element={<RecipePage/>}/>
+            </Routes>
+        </BrowserRouter>
     )
 }
 

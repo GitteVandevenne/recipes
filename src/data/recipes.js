@@ -199,6 +199,32 @@ export const recipes = [
             "Spread the frosting over the warm rolls and serve."
         ],
     },
+    {
+        id: 9,
+        title: "Fried chicken with oven potatoes",
+        category: 2,
+        subcategory: 2,
+        ingredients: {
+            Chicken: [
+                "Chicken",
+                'Breadcrumbs',
+                "Egg",
+                "Spices (salt, paprika, pepper, ...)"
+            ],
+            Potatoes:[
+                "Potatoes",
+                "Oil",
+                "Water",
+                "Salt",
+                "Optionally: other spices"
+            ]
+        },
+        instructions: [
+            "For the chicken:\n Mix the spices with the breadcrumbs.\n Dip the chicken in the egg and then in the breadcrumbs. Put them in a baking pan and cover them with oil.",
+            "For the potatoes:\nCut the potatoes in halves/fourths. Put them on a baking sheet.\nDrizzle them with oil, salt, and other spices and mix well.\n Pour the water on the baking sheet.",
+            "Put both in a preheated oven (~200°C):\nThe potatoes for 30 minutes, stirring at least every 10.\nThe chicken for 20 minutes"
+        ],
+    },
 ]
 /*
 EMPTY recipe:
